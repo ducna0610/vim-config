@@ -4,7 +4,8 @@ Plug 'morhetz/gruvbox'
 Plug 'preservim/nerdtree'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
-Plug 'neoclide/coc.nvim'
+Plug 'neoclide/coc.nvim' 
+Plug 'jiangmiao/auto-pairs'
 
 call plug#end()
 
