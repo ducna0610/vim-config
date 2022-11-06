@@ -6,6 +6,7 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'neoclide/coc.nvim' 
 Plug 'jiangmiao/auto-pairs'
+Plug 'kien/ctrlp.vim'
 
 call plug#end()
 
@@ -17,6 +18,10 @@ colorscheme gruvbox
 map <C-b> :NERDTreeToggle<CR>
 map <C-i> :NERDTreeFind<CR>
 let NERDTreeShowHidden=1
+let NERDTreeQuitOnOpen=1
+let NERDTreeWinSize=50
+let NERDTreeMinimalUI=1
+let NERDTreeShowBookmarks=1
 
 "Airline
 let g:airline_theme='bubblegum'
@@ -37,3 +42,7 @@ inoremap <silent><expr> <Tab>
       \ coc#refresh()
 inoremap <expr> <Tab> coc#pum#visible() ? coc#pum#next(1) : "\<Tab>"
 inoremap <expr> <S-Tab> coc#pum#visible() ? coc#pum#prev(1) : "\<S-Tab>"
+
+"CtrlP
+let g:ctrlp_map = '<c-p>'
+let g:ctrlp_cmd = 'CtrlP'
